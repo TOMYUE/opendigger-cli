@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="opendigger",
-    version="0.1.3",
+    version="0.1.5",
     packages=find_packages(),
     install_requires=[
         "numpy",
@@ -11,7 +11,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "opendigger = opendigger:main",
+            "opendigger = opendigger.opendigger:main",
         ],
     },
     author="TOMYUE",
