@@ -1,1 +1,1 @@
-from .opendigger import main
+from opendigger import main

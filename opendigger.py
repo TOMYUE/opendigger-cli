@@ -277,5 +277,5 @@ def main():
     open_digger.run(args)
 
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()
