@@ -20,7 +20,7 @@ Prerequisites: `python3` environment
 
 #### Help
 
-`opendigger -h`![截屏2023-06-05 15.52.43](./README.assets/截屏2023-06-05 15.52.43.png)
+`opendigger -h`![截屏2023-06-05 15.52.43](./README.assets/opendigger-h.png)
 
 #### Query openrank
 
