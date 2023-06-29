@@ -23,7 +23,7 @@ def get_url_json(url):
         json_data = json.loads(data)
         return json_data
     except urllib.error.HTTPError as e:
-        print(f"HTTPError: {e.code} - {e.reason}")
+        print(f"HTTPError: {e.code} - {url} {e.reason}")
     except urllib.error.URLError as e:
         print(f"URLError: {e.reason}")
     except json.JSONDecodeError as e:
@@ -260,7 +260,7 @@ class OpenDigger:
     ##########################################
     def display_active_dates_times(self, repo_name: str, month, f=None, download=False):
         if month is None:
-            print("please specify the month")
+            print("The metric corresponds to too much data, please specify the month in active_dates_times")
             return
         data = get_json_data(prefix + repo_name + "/active_dates_times.json", month)
         if f is not None and download:
@@ -295,7 +295,7 @@ class OpenDigger:
 
     def display_technical_fork(self, repo_name: str, month=None, f=None, download=False):
         if month is None:
-            print("please specify the month")
+            print("The metric corresponds to too much data, please specify the month in technical_fork")
             return
         data = get_json_data(prefix + repo_name + "/technical_fork.json", month)
         if f is not None and download:
@@ -307,7 +307,7 @@ class OpenDigger:
 
     def display_participants(self, repo_name: str, month=None, f=None, download=False):
         if month is None:
-            print("please specify the month")
+            print("The metric corresponds to too much data, please specify the month in participants")
             return
         data = get_json_data(prefix + repo_name + "/participants.json", month)
         if f is not None and download:
@@ -340,7 +340,7 @@ class OpenDigger:
 
     def display_bus_factor(self, repo_name: str, month=None, f=None, download=False):
         if month is None:
-            print("month not specified, please specify the month and retry this")
+            print("The metric corresponds to too much data, please specify the month and retry for this metric")
             return
         data = get_json_data(prefix + repo_name + "/bus_factor.json", month)  # TODO: change .json file name
         detail_data = get_json_data(prefix + repo_name + "/bus_factor_detail.json", month)
@@ -400,8 +400,8 @@ class OpenDigger:
         f.write(f"![image-{str(datetime.now().time())}](./issues{suffix_png})\n")
 
     def display_issues(self, repo_name: str, month=None, f=None, download=False):
-        issue_new = get_json_data(prefix + repo_name + "/issue_new.json", month)  # TODO: change .json file name, 3 types
-        issue_closed = get_json_data(prefix + repo_name + "/issue_closed.json", month)
+        issue_new = get_json_data(prefix + repo_name + "/issues_new.json", month)  # TODO: change .json file name, 3 types
+        issue_closed = get_json_data(prefix + repo_name + "/issues_closed.json", month)
         issue_comments = get_json_data(prefix + repo_name + "/issue_comments.json", month)
         issue_response_time = get_url_json(prefix + repo_name + "/issue_response_time.json")
         issue_resolution_duration = get_url_json(prefix + repo_name + "/issue_resolution_duration.json")
