@@ -62,3 +62,7 @@ HTTPError: 404 - Not Found
 ```
 
 please check your network connection and try again. If still failed, you should consider to check the metrics on opendigger GitHub repo by yourself. Sorry for the inconveniences. 
+
+## examples
+
+You can see the example of the generated report in the examples directory in the Github Repo. [link](https://github.com/TOMYUE/opendigger-cli/tree/main/examples)
