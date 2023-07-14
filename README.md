@@ -10,7 +10,7 @@ Opendigger command line is designed for CLI enthusiasts who wish to gather diver
 
 ###  [Download and install](https://pypi.org/project/opendigger/)
 
-Prerequisites: `python3` environment
+Prerequisites: `python3` environment, other PyPI packages like `numpy`,`plotext` and `matplotlib` is requried to install if error like package not found occur.
 
 `pip install opendigger`
 
