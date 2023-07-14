@@ -4,7 +4,7 @@
 
 [![PyPI version](https://badge.fury.io/py/opendigger.svg)](https://badge.fury.io/py/opendigger)
 
-Opendigger command line is designed for CLI enthusiasts who wish to gather diverse information and metrics that evaluate the quality of open-source projects related to a GitHub repository. For detailed information about the metrics, please refer to this [link](https://github.com/X-lab2017/open-digger).
+Opendigger command line is designed for CLI enthusiasts who wish to gather diverse information and metrics that evaluate the quality of open-source projects related to a GitHub repository. For detailed information about the index and metrics, please refer to this [link](https://github.com/X-lab2017/open-digger).
 
 
 
